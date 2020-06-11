@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit HTML Table Selected Row</title>
+<meta charset="windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+table tr:not(:first-child){
+cursor: pointer;transition: all .25s ease-in-out;
+}
+table tr:not(:first-child):hover{background-color: #ddd;}
+
+h1{
+font-size: 1500;
+text-align: center;
+color: orange;
+
+}
+
+p{
+font-size: 1500;
+text-align: center;
+color: orange;
+
+}
+
+
+</style>
+</head>
+<h1>Add project</h1>
+<body><p>
+Enter Topic:<input type="text" name="fname" id="fname"><br><br><textarea name="comments" cols="2" rows="4"> Not more than 1000 words</textarea>
+Enter number of word:<input type="number" name="lname" id="lname"><br><br>
+Additional information :<input type="text" name="age" id="age"><br><br>
+<button onclick="editRow();">Add project</button><br><br>
+
+</p></body>
+</html>
